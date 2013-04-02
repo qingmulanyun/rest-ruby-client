@@ -1,0 +1,25 @@
+# Copyright (c) 2013 Zuora Inc.
+#
+# Zuora Ruby SDK for REST API support
+#
+
+# HTTP Specifc properties - ALL PROPERTIES MUST BE PRESENT
+http_user_agent: z_sdk_v1.0       # for http request header
+http_connect_timeout: 30000       # for httpclient
+http_send_timeout: 15000          # for httpclient
+http_receive_timeout: 30000       # for httpclient
+
+# Zuora REST API specific properties - ALL PROPERTIES MUST BE PRESENT
+rest_api_endpoint: https://staging-api.zuora.com/rest
+rest_api_version: v1              # Target API version
+
+# Installation specific properties - ALL PROPERTIES MUST BE PRESENT
+default_tenant_user_id: FeatureTest23       # for CONNECT
+default_tenant_password: banana             # for CONNECT
+proxy_used: false                           # No forwarding proxy
+proxy_url: http://www.mycompany.com:8000    # proxy url if proxy used = true
+proxy_auth: false                           # non authenticating proxy
+proxy_user: bigbrother                      # proxy credentials
+proxy_password: bigbrother                  #   only if proxy_auth = true
+api_trace: true                             # trace API in api.trace.log
+ssl_verify_peer: false                      # verify Zuora cert
