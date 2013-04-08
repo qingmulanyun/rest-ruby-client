@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.files = Dir["lib/**/*", "samples/**/*", "config/**/*"]
   spec.has_rdoc = true
   spec.rubyforge_project = "zuora-rest-ruby"
-  spec.extra_rdoc_files = ['README', 'LICENSE']
+  spec.extra_rdoc_files = ['README.md', 'LICENSE']
   spec.add_runtime_dependency "httpclient", ">= 2.3.1"
   spec.add_runtime_dependency "json_pure", ">= 1.7.6"
   spec.add_runtime_dependency "hashie", ">= 1.2.0"
