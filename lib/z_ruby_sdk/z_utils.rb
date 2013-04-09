@@ -3,9 +3,9 @@
 # Zuora Ruby SDK for REST API support
 #
 
-module Utils
+module ZUtils
   # get thread id of current thread
-  def thread_id(t=nil)
+  def self.thread_id(t=nil)
     t ? t.inspect.split(/Thread:0x/)[1].split(/dead>/) :
       Thread.current.inspect.split(/Thread:0x/)[1].split(/run>/)
   end

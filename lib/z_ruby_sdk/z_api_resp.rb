@@ -3,7 +3,7 @@
 # Zuora Ruby SDK for REST API support
 #
 
-include Hashie
+# include Hashie
 
 # ZAPIResp is synonymous to the MASH class in Hashie gem
-ZAPIResp = Mash
+ZAPIResp = Hashie::Mash

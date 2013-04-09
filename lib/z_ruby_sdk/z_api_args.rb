@@ -3,10 +3,10 @@
 # Zuora Ruby SDK for REST API support
 #
 
-include Hashie
+# include Hashie
 
 # ZAPIArgs is synonymous to the MASH class in the Hashie gem
-ZAPIArgs = Mash
+ZAPIArgs = Hashie::Mash
 
 # We use update as one our attributes. This method confuses with our attribute
 ZAPIArgs.send :undef_method, :update

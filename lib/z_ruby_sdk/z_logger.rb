@@ -3,8 +3,6 @@
 # Zuora Ruby SDK for REST API support
 #
 
-include Utils
-
 # Z_Logger is a wrapper object of the standard ruby logger
 class Z_Logger
 
@@ -24,7 +22,7 @@ class Z_Logger
       a_logger.level = Logger::INFO
       class << a_logger
         def format_message (severity, timestamp, progname, msg)
-          "[#{timestamp.strftime("%Y-%m-%d %H:%M:%S")}.#{("%.3f" % timestamp.to_f).split('.')[1]}] #{thread_id} #{msg}\n"
+          "[#{timestamp.strftime("%Y-%m-%d %H:%M:%S")}.#{("%.3f" % timestamp.to_f).split('.')[1]}] #{ZUtils.thread_id} #{msg}\n"
         end
       end
     }
