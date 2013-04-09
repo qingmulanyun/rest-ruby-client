@@ -10,11 +10,8 @@ Pre-requisites
 
 Installation
 
-    1) From Rubyforge.org
-       gem install zuora-rest-ruby
-
-    2. From github after download
-       gem install --local ~/z_ruby_sdk-1.0.gem
+    From github after download
+       gem install --local z_ruby_sdk-1.0.gem
 
 Version
     1.0
