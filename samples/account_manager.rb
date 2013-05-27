@@ -67,6 +67,7 @@ class Account_Manager
     args.req_body.notes = 'Soho Networks'
     args.req_body.billCycleDay = '15'
     args.req_body.paymentTerm = 'Net 30'
+    args.req_body.autoPay = true
     args.req_body.dfadsf__c = "willie"
     args.req_body.billToContact = ZAPIArgs.new
     args.req_body.billToContact.address1 = 'address1'
@@ -119,6 +120,7 @@ class Account_Manager
     args.uri = Resource_Endpoints::PUT_ACCOUNT.gsub("{account-key}", ERB::Util.url_encode(account_key))
 
     args.req_body = ZAPIArgs.new
+    args.req_body.autoPay = false
     args.req_body.billToContact = ZAPIArgs.new
     args.req_body.billToContact.homePhone = '9259259259'
     args.req_body.billToContact.zipCode = '94549'
