@@ -78,7 +78,7 @@ class Account_Manager
     args.req_body.billToContact.firstName = 'John'
     args.req_body.billToContact.lastName = 'Doe'
     args.req_body.billToContact.mobilePhone = '14156789012'
-    args.req_body.billToContact.workEmail = 'john.doe@zoura.com'
+    args.req_body.billToContact.workEmail = 'john.doe@zuora.com'
 
     args.req_body.soldToContact = ZAPIArgs.new
     args.req_body.soldToContact.address1 = 'address1'
@@ -89,7 +89,7 @@ class Account_Manager
     args.req_body.soldToContact.lastName = 'Doe'
     args.req_body.soldToContact.mobilePhone = '14156789012'
     args.req_body.soldToContact.state = 'California'
-    args.req_body.soldToContact.workEmail = 'jane.doe@zoura.com'
+    args.req_body.soldToContact.workEmail = 'jane.doe@zuora.com'
 
     args.req_body.creditCard = ZAPIArgs.new
     args.req_body.creditCard.cardType = 'Visa'
@@ -159,7 +159,7 @@ class Account_Manager
     args.req_body.billToContact.firstName = 'Jane'
     args.req_body.billToContact.lastName = 'Doe'
     args.req_body.billToContact.mobilePhone = '14156789012'
-    args.req_body.billToContact.workEmail = 'jane.doe@zoura.com'
+    args.req_body.billToContact.workEmail = 'jane.doe@zuora.com'
 
     args.req_body.soldToContact = ZAPIArgs.new
     args.req_body.soldToContact.address1 = 'address1'
@@ -170,7 +170,7 @@ class Account_Manager
     args.req_body.soldToContact.lastName = 'Doe'
     args.req_body.soldToContact.mobilePhone = '14156789012'
     args.req_body.soldToContact.state = 'California'
-    args.req_body.soldToContact.workEmail = 'john.doe@zoura.com'
+    args.req_body.soldToContact.workEmail = 'john.doe@zuora.com'
 
     args.req_body.creditCard = ZAPIArgs.new
     args.req_body.creditCard.cardType = 'Visa'
