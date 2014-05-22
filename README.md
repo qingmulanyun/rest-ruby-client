@@ -7,7 +7,10 @@ Pre-requisites
     hashie, >= 1.2.0
     awesome_print >= 1.1.0
 
-
+    You also need a trial account in any Zuora application, go get a free trial 
+    at http://info.zuora.com/zuora-free-trial.html and then 
+    update `config/z_config.yml` with your credential.
+    
 Installation
 
     From github after download
