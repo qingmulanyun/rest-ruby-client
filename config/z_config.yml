@@ -10,12 +10,12 @@ http_send_timeout: 15000          # for httpclient
 http_receive_timeout: 30000       # for httpclient
 
 # Zuora REST API specific properties - ALL PROPERTIES MUST BE PRESENT
-rest_api_endpoint: https://apisandbox-api.zuora.com/rest
+rest_api_endpoint: <%= ENV['ZUORA_PROXY_API_ENDPOINT'] %>
 rest_api_version: v1              # Target API version
 
 # Installation specific properties - ALL PROPERTIES MUST BE PRESENT
-default_tenant_user_id: <your trial tenant user name>       # for CONNECT
-default_tenant_password: <your password>    # for CONNECT
+default_tenant_user_id: <%= ENV['ZUORA_PROXY_API_USERID'] %>       # for CONNECT
+default_tenant_password: <%= ENV['ZUORA_PROXY_API_PASSWORD'] %>    # for CONNECT
 proxy_used: false                           # No forwarding proxy
 proxy_url: http://www.mycompany.com:8000    # proxy url if proxy used = true
 proxy_auth: false                           # non authenticating proxy

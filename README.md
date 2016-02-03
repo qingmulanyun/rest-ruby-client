@@ -6,6 +6,7 @@ Pre-requisites
     json_pure, >= 1.7.6
     hashie, >= 1.2.0
     awesome_print >= 1.1.0
+    dotenv-rails
 
     You also need a trial account in any Zuora application, go get a free trial 
     at http://info.zuora.com/zuora-free-trial.html and then 

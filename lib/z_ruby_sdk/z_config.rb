@@ -38,7 +38,9 @@ class Z_Config
     Z_Logger.instance.log("Loading configuration file #{@config_file} ...", Z_Constants::LOG_SDK)
 
     # load and log all properties
-    @properties = YAML.load_file(@config_file)
+    for file in Dir.glob(@config_file)
+      @properties = YAML.load(ERB.new(File.read file).result)
+    end
     @properties.keys.sort.each {|prop|
       if prop.include? "password"
         Z_Logger.instance.log("#{prop} set to ********", Z_Constants::LOG_SDK)
